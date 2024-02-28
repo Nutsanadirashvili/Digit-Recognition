@@ -63,10 +63,4 @@ The program recognizes only one digit:
 [MNIST Dataset](http://yann.lecun.com/exdb/mnist/)<br>
 [p5.js](https://p5js.org/libraries/)
 
-****
-<br><br>
-Emsal Mengus, Laura Gonser & Nutsa Nadirashvili <br>
-
-Course - Applied AI 2023<br>
-**Code & Context**
 
