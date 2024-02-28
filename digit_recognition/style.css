@@ -1,0 +1,159 @@
+*{
+    height: 100%;
+   
+}
+
+body {
+    background: radial-gradient(circle at 0% 0.5%, rgb(241, 241, 242) 0.1%, rgb(224, 226, 228) 100.2%);
+    height: 100%;
+    display: grid;
+    justify-content: center;
+     
+}
+
+
+
+h1 {
+    padding: 20px;
+    font-size: 52px;
+    font-weight: bold;
+    text-align: center;
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+}
+
+#reset {
+    background-color: #101010;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#reset:hover {
+    background-color: #8dc8ba;
+}
+
+.background-paragraph{
+    
+    height: fit-content;
+    justify-content: center;
+    background-color: #ffffff;
+        /* Set your desired background color */
+    padding: 5px; 
+    width: 100%;
+   
+}
+
+p {
+    padding: 3px;
+    font-size: 18px;
+    line-height: 1.3;
+    text-align: center;
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+}
+
+#input{
+padding: 5px;
+
+}
+
+#prediction {
+padding: 5px;
+
+}
+
+#weights{
+    
+padding-left: 10px;
+}
+
+section{
+ display: flex;
+ justify-content: center;
+ flex-direction: row;
+ align-items: center;
+}
+
+.wrapper{
+    display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+.keyboard {
+    --key_size: calc(100vw / 25);
+  
+    --key_clr_background: rgb(243, 243, 243);
+    --key_clr_shadow: rgb(80, 80, 80);
+    --key_clr_text: rgb(0, 0, 0);
+    --key_font: 'Questrial', sans-serif;
+    --key_clr_border: rgb(0, 0, 0);
+    --key_clr_border_hover: rgb(200, 35, 35);
+    --key_clr_border_active: rgb(20, 100, 20);
+}
+
+
+
+.keyboard {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: auto auto;
+    padding: calc(var(--key_size) / 3);
+    user-select: none;
+    font-family: var(--key_font);
+}
+
+.section {
+    display: grid;
+    width:fit-content;
+    height: fit-content;
+    grid-template-rows: repeat(1, var(--key_size));
+    grid-gap: calc(var(--key_size) / 10);
+
+}
+
+.section.left {
+    height: fit-content;
+    grid-template-columns: repeat(20, calc(var(--key_size) / 2));
+}
+
+.key {
+    background-color: var(--key_clr_background);
+    border: calc(var(--key_size) / 50) solid var(--key_clr_border);
+    border-radius: calc(var(--key_size) / 10);
+    grid-column: span 2;
+    font-size: calc(var(--key_size) / 3.5);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    box-shadow: calc(var(--key_size) / 25) calc(var(--key_size) / 25) calc(var(--key_size) / 25) var(--key_clr_shadow);
+}
+
+.key i {
+    font-weight: 600;
+}
+
+
+.key:hover {
+    border-color: var(--key_clr_border_hover);
+}
+
+.key:active {
+    margin: calc(var(--key_size) / 25) 0 0 calc(var(--key_size) / 25);
+    border-color: var(--key_clr_border_active);
+    box-shadow: none;
+}
+
